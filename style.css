@@ -1,4 +1,27 @@
-html, body {
-  height: 100%;
-  width: 100%;
+body {
+  padding: 30px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+section {
+  border-bottom: 1px solid slategray;
+  padding: 20px 0px;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 3rem;
+  color: black;
+}
+
+div {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  color: slategray;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
 }
