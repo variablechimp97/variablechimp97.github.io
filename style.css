@@ -4,7 +4,6 @@ body {
 }
 
 section {
-  border-bottom: 1px solid slategray;
   padding: 20px 0px;
 }
 
@@ -18,10 +17,21 @@ div {
   margin: 5px;
   padding: 5px;
   border-radius: 10px;
-  color: slategray;
 }
 
 .navigation {
   display: flex;
   justify-content: center;
+}
+
+.main-text{
+  margin-top: 25%;
+  color: black;
+}
+.main-text h1{
+  animation: h1-fade 1s ease;
+}
+.main-text p{
+  font-size: 1.2rem;
+  animation: p-fade 2s ease;
 }
