@@ -162,19 +162,24 @@ div {
 }
 
 .contact-links {
-  display: flex; 
-  flex-direction: row; /* This changes it back to horizontal */
-  justify-content: center; 
-  align-items: center; /* Keep items vertically centered */
-  margin-top: 30px; 
+  display: flex;
+  flex-direction: row;
+  /* This changes it back to horizontal */
+  justify-content: center;
+  align-items: center;
+  /* Keep items vertically centered */
+  margin-top: 30px;
 }
 
 .contact-links a {
-  display: flex; /* Ensure contents inside align if needed */ 
-  flex-direction: column; /* Keep icon above text if you prefer this */
+  display: flex;
+  /* Ensure contents inside align if needed */
+  flex-direction: column;
+  /* Keep icon above text if you prefer this */
   align-items: center;
   text-decoration: none;
-  margin: 0 30px; /* Add horizontal spacing between links */
+  margin: 0 30px;
+  /* Add horizontal spacing between links */
 }
 
 .contact-label {
