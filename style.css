@@ -1,6 +1,9 @@
 body {
   padding: 30px;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  /* Or similar font of your choice */
+  line-height: 1.6;
+  color: #333;
 }
 
 section {
@@ -9,7 +12,7 @@ section {
 
 h1 {
   font-weight: 100;
-  font-size: 3rem;
+  font-size: 4rem;
   color: black;
 }
 
@@ -24,14 +27,165 @@ div {
   justify-content: center;
 }
 
-.main-text{
+.main-text {
   margin-top: 5%;
   color: black;
 }
-.main-text h1{
+
+.main-text h1 {
   animation: h1-fade 1s ease;
 }
-.main-text p{
-  font-size: 1.2rem;
+
+.main-text p {
+  font-size: 1.4rem;
   animation: p-fade 2s ease;
+}
+
+/* --- HERO SECTION STYLES --- */
+.hero {
+  background-color: #f0f0f0;
+  /* Light background */
+  text-align: center;
+  padding: 80px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  /* Space between sections */
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-style: italic;
+  color: #666;
+  /* More subtle color for the tagline */
+  margin-bottom: 30px;
+}
+
+/* Updated button styles */
+.button {
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  margin: 0 10px;
+  display: inline-block;
+  font-weight: 600;
+  background-color: black;
+  /* Changed to black */
+  color: white;
+}
+
+/* If you want a hover effect, add this */
+.button:hover {
+  background-color: white;
+  /* Slightly darker black on hover */
+  color: black;
+}
+
+.primary-button {
+  background-color: black;
+  /* Example green - change this */
+  color: white;
+}
+
+/* --- OTHER SECTION STYLES --- */
+.about,
+.projects {
+  padding: 40px 0;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Responsive columns */
+  gap: 30px;
+}
+
+/* Target about and project description paragraphs */
+.about p,
+.projects p {
+  font-size: 1.3rem;
+  /* Increased font size */
+  line-height: 1.7;
+  /* Slightly more line spacing */
+}
+
+.navigation {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 40px;
+  /* Space between nav and hero */
+}
+
+.navigation div {
+  display: inline-block;
+  /* Links sit next to each other */
+  margin: 0 20px;
+  /* Space between links */
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  margin: 0 20px;
+  padding: 8px 0;
+  /* A little padding increases clickable area */
+}
+
+/* If you want a hover effect */
+.navigation a:hover {
+  color: #28a745;
+  /* Example: Match your primary button color */
+}
+
+.work-section {
+  padding: 40px 0;
+  /* Similar to 'about' or 'project' */
+}
+
+.work {
+  margin-bottom: 30px;
+  /* Space between job entries */
+}
+
+.work-section p {
+  /* Target paragraphs within the work section */
+  font-size: 1.3rem;
+}
+
+.work-section h3 {
+  /* Target the company/role headings */
+  font-size: 1.5rem;
+}
+
+.contact-links {
+  display: flex; 
+  flex-direction: row; /* This changes it back to horizontal */
+  justify-content: center; 
+  align-items: center; /* Keep items vertically centered */
+  margin-top: 30px; 
+}
+
+.contact-links a {
+  display: flex; /* Ensure contents inside align if needed */ 
+  flex-direction: column; /* Keep icon above text if you prefer this */
+  align-items: center;
+  text-decoration: none;
+  margin: 0 30px; /* Add horizontal spacing between links */
+}
+
+.contact-label {
+  margin-top: 5px;
+  /* Space between icon and text */
+  font-weight: 600;
+  /* Or adjust boldness as you like */
+}
+
+/* Example - if you add icons */
+.contact-links img {
+  width: 60px;
+  height: 60px;
 }
